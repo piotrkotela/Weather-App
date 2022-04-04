@@ -1,0 +1,10 @@
+.bookmark {
+    width: 30px;
+    transform: scale(1.25);
+    margin-right: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+}
+

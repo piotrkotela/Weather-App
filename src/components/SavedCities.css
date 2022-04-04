@@ -1,0 +1,64 @@
+.city-box {
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  padding: 5px 32px;
+  padding-bottom: 15px;
+  width: 340px;
+  height: fit-content;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+  animation: fadeInAnimation ease 0.3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.city {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(175, 175, 175);
+}
+
+.city p {
+  margin-right: 1rem;
+}
+
+.city-check {
+  margin-right: 0.5rem;
+  background-color: rgb(30, 144, 255);
+  color: white;
+  border-radius: 8px;
+  border: none;
+  padding: 0.4rem;
+  transition: 0.3s;
+}
+
+.city-check:hover {
+  background-color: rgb(25, 115, 206);
+}
+
+.city-delete {
+  color: red;
+  background: none;
+  border-radius: 8px;
+  padding: 0.35rem;
+  box-sizing: border-box;
+  border: solid 1px red;
+  transition: 0.3s;
+}
+
+.city-delete:hover {
+  background-color: red;
+  color: white;
+}
