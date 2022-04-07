@@ -8,8 +8,9 @@ const WeatherCard = (props) => {
   temperature = temperature.toFixed(0);
   let wind = (props.wind * 3.6).toFixed(0);
   const forecast = props.forecast;
-  const date = new Date();
-  const day = date.getDay();
+  let date = new Date();
+  let day = date.getDay();
+  console.log(day, date)
   const weekday = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
   return (
     <div className="card">
@@ -34,11 +35,11 @@ const WeatherCard = (props) => {
 
       <table>
         <tr>
-          <td>{weekday[day + 1]}</td>
-          <td>{weekday[day + 2]}</td>
-          <td>{weekday[day + 3]}</td>
-          <td>{weekday[day + 4]}</td>
-          <td>{weekday[day + 5]}</td>
+          <td>{weekday[(day + 1)%7]}</td>
+          <td>{weekday[(day + 2)%7]}</td>
+          <td>{weekday[(day + 3)%7]}</td>
+          <td>{weekday[(day + 4)%7]}</td>
+          <td>{weekday[(day + 5)%7]}</td>
         </tr>
         <tr>
           <td>{forecast[0].daily[1].temp.day.toFixed(0)}°</td>
