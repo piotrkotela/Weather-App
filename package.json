@@ -1,5 +1,6 @@
 {
-  "name": "my-app",
+  "homepage": "https://github.com/piotrkotela/Weather-App",
+  "name": "weatherapp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
